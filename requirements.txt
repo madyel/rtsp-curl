@@ -1,2 +1,9 @@
-pycurl==7.43.0.5
-scanf==1.5.2
+# Runtime dependencies (pinned for reproducible dev/CI environments)
+pycurl>=7.45.0
+scanf>=1.5.2
+
+# Development / packaging tools
+build>=1.0
+twine>=5.0
+ruff>=0.4
+pytest>=8.0
