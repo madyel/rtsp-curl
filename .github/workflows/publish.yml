@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/project/rtsp_curl/
+      url: https://pypi.org/project/rtsp-curl/
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -49,7 +49,7 @@ jobs:
           path: dist/
 
       # Uses PyPI Trusted Publisher (OIDC) — configure at:
-      # https://pypi.org/manage/project/rtsp_curl/settings/publishing/
+      # https://pypi.org/manage/project/rtsp-curl/settings/publishing/
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
 
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: testpypi
-      url: https://test.pypi.org/project/rtsp_curl/
+      url: https://test.pypi.org/project/rtsp-curl/
     steps:
       - uses: actions/download-artifact@v4
         with:
