@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.backends.legacy:build"
 
 [project]
-name = "rtsp_curl"
+name = "rtsp-curl"
 version = "0.9.0"
 description = "Python RTSP client built on libcurl (pycurl)"
 readme = "README.md"
@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/madyel/rtsp_curl"
-Repository = "https://github.com/madyel/rtsp_curl"
-"Bug Tracker" = "https://github.com/madyel/rtsp_curl/issues"
+Homepage = "https://github.com/madyel/rtsp-curl"
+Repository = "https://github.com/madyel/rtsp-curl"
+"Bug Tracker" = "https://github.com/madyel/rtsp-curl/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
@@ -47,3 +47,4 @@ ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "-v --tb=short"
