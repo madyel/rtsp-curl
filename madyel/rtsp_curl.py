@@ -3,11 +3,9 @@
 from __future__ import annotations
 
 import logging
-import os
 import random
 import time
 from pathlib import Path
-from typing import Optional, Tuple
 
 import pycurl
 from scanf import scanf
@@ -23,7 +21,7 @@ _SDP_PATH = Path(__file__).resolve().parent / "file_tmp.sdp"
 __all__ = ["RtspCurl", "Storage"]
 
 
-def _random_port_pair(low: int = 49152, high: int = 65534) -> Tuple[int, int]:
+def _random_port_pair(low: int = 49152, high: int = 65534) -> tuple[int, int]:
     """Return a consecutive (even, odd) port pair in the ephemeral range."""
     port = random.randint(low, high - 1)
     if port % 2 != 0:
@@ -73,7 +71,7 @@ class RtspCurl:
         """
         self.debug = debug
         self.tcp = tcp
-        self._curl: Optional[pycurl.Curl] = None
+        self._curl: pycurl.Curl | None = None
         self._sdp_file = None
         self._sdp_path = _SDP_PATH
 

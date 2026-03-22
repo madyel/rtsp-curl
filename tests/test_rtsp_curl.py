@@ -5,16 +5,16 @@ from __future__ import annotations
 import os
 import tempfile
 from pathlib import Path
-from unittest.mock import MagicMock, patch, call
+from unittest.mock import MagicMock, patch
 
 import pytest
 
 from madyel import RtspCurl, Storage, __version__
 
-
 # ---------------------------------------------------------------------------
 # Version
 # ---------------------------------------------------------------------------
+
 
 class TestVersion:
     def test_version_string(self):
@@ -27,6 +27,7 @@ class TestVersion:
 # ---------------------------------------------------------------------------
 # Storage
 # ---------------------------------------------------------------------------
+
 
 class TestStorage:
     def test_empty(self):
@@ -53,6 +54,7 @@ class TestStorage:
 # ---------------------------------------------------------------------------
 # RtspCurl — initialisation
 # ---------------------------------------------------------------------------
+
 
 class TestRtspCurlInit:
     def test_requires_init_before_methods(self):
@@ -117,6 +119,7 @@ class TestRtspCurlInit:
 # RtspCurl — SDP parsing
 # ---------------------------------------------------------------------------
 
+
 class TestGetMediaControlAttribute:
     def _make_client_with_sdp(self, sdp_content: str) -> RtspCurl:
         client = RtspCurl()
@@ -165,6 +168,7 @@ class TestGetMediaControlAttribute:
 # ---------------------------------------------------------------------------
 # RtspCurl — write SDP callback
 # ---------------------------------------------------------------------------
+
 
 class TestWriteSdp:
     def test_write_sdp_writes_to_open_file(self):
