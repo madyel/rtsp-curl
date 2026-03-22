@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rtsp-curl"
-version = "0.9.0"
+version = "1.0.1"
 description = "Python RTSP client built on libcurl (pycurl)"
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "MaDyEl", email = "madyel@tutanota.com" }]
+authors = [{ name = "MaDyEl", email = "madyel83@gmail.com" }]
 keywords = ["rtsp", "streaming", "curl", "pycurl", "camera"]
 classifiers = [
     "Development Status :: 4 - Beta",
