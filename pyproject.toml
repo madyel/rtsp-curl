@@ -8,7 +8,7 @@ version = "0.9.0"
 description = "Python RTSP client built on libcurl (pycurl)"
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "MaDyEl", email = "madyel@tutanota.com" }]
+authors = [{ name = "MaDyEl", email = "madyel83@gmail.com" }]
 keywords = ["rtsp", "streaming", "curl", "pycurl", "camera"]
 classifiers = [
     "Development Status :: 4 - Beta",
