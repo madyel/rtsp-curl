@@ -1,7 +1,7 @@
 # rtsp-curl
 
-[![PyPI version](https://img.shields.io/pypi/v/rtsp-curl.svg)](https://pypi.org/project/rtsp-curl/)
-[![Python](https://img.shields.io/pypi/pyversions/rtsp-curl.svg)](https://pypi.org/project/rtsp-curl/)
+[![PyPI version](https://img.shields.io/pypi/v/rtsp-curl-mad.svg)](https://pypi.org/project/rtsp-curl-mad/)
+[![Python](https://img.shields.io/pypi/pyversions/rtsp-curl-mad.svg)](https://pypi.org/project/rtsp-curl-mad/)
 [![License](https://img.shields.io/github/license/madyel/rtsp-curl.svg)](LICENSE)
 [![CI](https://github.com/madyel/rtsp-curl/actions/workflows/ci.yml/badge.svg)](https://github.com/madyel/rtsp-curl/actions/workflows/ci.yml)
 
@@ -21,7 +21,7 @@ Supports OPTIONS / DESCRIBE / SETUP / PLAY / TEARDOWN over UDP (default) or TCP.
 ## Installation
 
 ```bash
-pip install rtsp-curl
+pip install rtsp-curl-mad
 ```
 
 **macOS** (custom OpenSSL required by pycurl):
@@ -32,7 +32,7 @@ PYCURL_SSL_LIBRARY=openssl \
   CPPFLAGS="-I/usr/local/opt/openssl/include" \
   pip install --no-cache-dir pycurl
 
-pip install rtsp-curl
+pip install rtsp-curl-mad
 ```
 
 ---
@@ -127,7 +127,7 @@ git push origin v0.9.1
 ```
 
 > One-time setup: configure the PyPI Trusted Publisher at
-> https://pypi.org/manage/project/rtsp-curl/settings/publishing/
+> https://pypi.org/manage/project/rtsp-curl-mad/settings/publishing/
 
 ---
 
